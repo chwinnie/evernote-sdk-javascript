@@ -1,0 +1,31 @@
+a {
+	outline: 0;
+	text-decoration: none;
+	color: currentColor;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.font-default {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.heavy       { font-weight: 800 }
+.bold        { font-weight: 700 }
+.semibold    { font-weight: 600 }
+.medium      { font-weight: 500 }
+.regular     { font-weight: 400 }
+.italic      { font-style: italic }
+.caps        { text-transform: uppercase; letter-spacing: 0px; }
+
+.text-center {
+	text-align: center;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px #000;
+}
+
+h1, .h1 { font-size: 6rem; line-height: 80px; } // 32px

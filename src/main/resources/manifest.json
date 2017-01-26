@@ -6,7 +6,9 @@
         "page": "views/background.html"
     },
     "version" : "1.0",
-
+    "chrome_url_overrides" : {
+        "newtab": "views/background.html"
+    },
     "browser_action" : {
         "default_icon" : "images/icon_19_grey.png",
         "default_title" : "__MSG_title__",
@@ -15,7 +17,9 @@
     "permissions" : [
         "tabs", "cookies", "notifications",
         "http://*.google.com/calendar/*", "https://*.google.com/calendar/*",
-        "https://*.evernote.com/*", "http://*.evernote.com/*"
+        "https://*.evernote.com/*", "http://*.evernote.com/*",
+        "https://api.darksky.net/*",
+        "geolocation"
     ],
     "content_scripts" : [
         {

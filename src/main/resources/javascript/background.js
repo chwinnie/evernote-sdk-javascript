@@ -10,7 +10,7 @@ function get_list_notebooks() {
         //response is result array of notebooks
         //callback function process response
         var response = noteStore.listNotebooks(Eventnote.Auth.get_auth_token());
-	console.log(response);
+	   return response;
     }
 }
 

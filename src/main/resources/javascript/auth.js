@@ -19,12 +19,12 @@ jQuery(function ($) {
     };
 
     Eventnote.Auth.oauth = ChromeExOAuth.initBackgroundPage({
-      'request_url' : 'https://www.evernote.com/oauth',
-      'authorize_url' : ' https://www.evernote.com/OAuth.action',
-      'access_url' : 'https://www.evernote.com/oauth',
+      'request_url' : 'https://sandbox.evernote.com/oauth',
+      'authorize_url' : ' https://sandbox.evernote.com/OAuth.action',
+      'access_url' : 'https://sandbox.evernote.com/oauth',
       'consumer_key' : '',
       'consumer_secret' : '',
-      'scope' : '',
+      'scope' : 'full',
       'app_name' : 'Sample to test sync with Evernote',
       'callback_page': 'views/chrome_ex_oauth.html'
     });
