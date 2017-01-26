@@ -12,6 +12,8 @@
 
 <p>In order to run this extension, you need to obtain an Evernote API key from http://dev.evernote.com/documentation/cloud and an API key from Dark Sky from https://darksky.net/dev/</p>
 
+<p>You will need to enter the Evernote information in auth.js. The dark sky information will need to be entered in app.js and services.js.</p>
+
 <p>You will also need a user account on the Evernote sandbox service. Sign up for an account at https://sandbox.evernote.com/Registration.action</p>
 
 <h2>Libraries/API used:</h2>
