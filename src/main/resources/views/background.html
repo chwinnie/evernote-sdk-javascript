@@ -55,7 +55,7 @@
     <div ng-controller="QuoteController">
         <div ng-style="windowHeightStyle" class="flex flex-column fill">
             <div class="flex flex-column items-center justify-center text-center fill">
-                <h1 class="regular">8:45 PM</h1>
+                <h1 class="regular">{{ currDate | date:'h:mm a'}}</h1>
                 <div style="max-width: 400px;">
                     <h3>{{currQuoteDisplayed}}</h3>
                 </div>

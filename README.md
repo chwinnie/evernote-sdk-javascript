@@ -1,25 +1,28 @@
-<h1>Evernote SDK for Javacsript</h1>
-
-Evernote API version 1.22
+<h1>Prana: Customizable Momentum-style Chrome Dashboard</h1>
 
 <h2>Overview</h2>
-<p>This SDK contains wrapper code used to call the Evernote Cloud API from javascript apps.</p>
-<p>The SDK also contains some samples. The code in javascript/background.js demonstrates the basic use of the SDK to access the Evernote Cloud API.</p>
+<p>A Momentum-style Chrome Extension that allows you to use your own quotes and photos, and warns you when you need to bring an umbrella. Quotes are pulled from Evernote.</p>
+
+<p>The extension will first ask you to authenticate your Evernote account. After that, every new tab opened should display the following:</p>
+<img src="/screenshots/screenshot.png"/>
+<img src="/screenshots/rain-demo.png"/>
+
 
 <h2>Prerequisites</h2>
-<p>In order to use the code in this SDK, you need to obtain an API key from http://dev.evernote.com/documentation/cloud. You'll also find full API documentation on that page.</p>
 
-<p>In order to run the sample code, you need a user account on the sandbox service where you will do your development. Sign up for an account at https://sandbox.evernote.com/Registration.action</p>
+<p>In order to run this extension, you need to obtain an Evernote API key from http://dev.evernote.com/documentation/cloud and an API key from Dark Sky from https://darksky.net/dev/</p>
 
-<h2>Getting Started</h2>
+<p>You will also need a user account on the Evernote sandbox service. Sign up for an account at https://sandbox.evernote.com/Registration.action</p>
 
-<p>The sample application demonstrates how to use the Evernote SDK for javascript apps to authentication to the Evernote service using OAuth, then access the user's Evernote account. To run the sample project:</p>
+<h2>Libraries/API used:</h2>
 <ul>
-<li>edit src\main\resources\javascript\auth.js with your correct params</li>
-<li>go to Google Chrome - settings - extentions</li>
-<li>load unpack extention src\main\resources\</li>
-<li>you will see JS icon on the toolbar in the browser</li>
-<li>app will be trying to authenticate to the Evernote using your paramms from auth.js</li>
-<li>if authentication will be successfull you can click to JS icon and open test page</li>
-<li>sample gets user, list of user's notebooks and add test note to default notebook</li>
+	<li>Kanda Software Javascript Evernote SDK for quotes (forked)</li>
+	<li>Dark Sky API for weather data</li>
+</ul>
+
+<h2>TODO</h2>
+<ul>
+	<li>Using a photo hosting service that can handle super high resolution photos</li>
+	<li>Only works locally - need to get up and running on production</li>
+	<li>Loading bars that display while API calls are still returning</li>
 </ul>

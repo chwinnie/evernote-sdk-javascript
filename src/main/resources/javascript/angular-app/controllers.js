@@ -26,7 +26,9 @@ ChromeExtensionApp.controller('QuoteController', ['$scope', 'EvernoteAPIService'
          // manual $digest required as resize event
          // is outside of angular
          $scope.$digest();
-   });
+    });
+
+   $scope.currDate = new Date();
 }]);
 
 ChromeExtensionApp.controller('PhotoController', ['$scope', 'RandomObjInList', function($scope, RandomObjInList) {
